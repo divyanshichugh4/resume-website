@@ -1,4 +1,0 @@
-Apertur Technology Application
-Version 1.0
-New Feature: User Authentication
-
