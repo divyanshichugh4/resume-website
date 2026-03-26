@@ -10,16 +10,21 @@
     <h1>Divyanshi</h1>
     <p>Aspiring DevOps Engineer</p>
 
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required><br><br>
-        <input type="email" id="email" placeholder="Your Email" required><br><br>
-        <textarea id="message" placeholder="Your Message" required></textarea><br><br>
-        <button type="submit">Send</button>
-    </form>
+<section id="contact">
 
-    <p id="responseMessage"></p>
-</div>
+<h2>Contact Me</h2>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
 
 <script>
 document.getElementById("contactForm").addEventListener("submit", async function(e) {
@@ -43,6 +48,41 @@ document.getElementById("contactForm").addEventListener("submit", async function
     document.getElementById("responseMessage").innerText = result.message;
 });
 </script>
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects-container">
+
+<div class="project-card">
+<h3>DevOps Resume Website</h3>
+<p>
+A personal portfolio website demonstrating DevOps concepts like Git workflow,
+CI/CD pipelines, and deployment.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="project-card">
+<h3>Automation Script</h3>
+<p>
+A basic shell script project to automate repetitive development tasks.
+</p>
+</div>
+
+</section>
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: divyanshi9017@gmail.com</p>
+<p>GitHub: https://github.com/divyanshichugh4/resume-website/pull/1</p>
+<p>LinkedIn: Linked in</p>
+
+</section>
 
 </body>
 </html>
