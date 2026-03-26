@@ -6,15 +6,19 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Simulate Build Process
-        run: echo "Building the website..."
+      - name: Validate HTML file exists
+        run: |
+          if [ ! -f index.html ]; then
+            echo "index.html not found!"
+            exit 1
+          fi
 
-      - name: Deployment Success Message
-        run: echo "Website deployed successfully!"
+      - name: Display Success Message
+        run: echo "Build successful! Website ready for deployment."
